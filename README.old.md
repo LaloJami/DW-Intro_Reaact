@@ -45,3 +45,58 @@ Para hacer el ambiente de desarrollo usamos create react app, el cual podemos pe
 **Babel** es el que hace la traducción que nos facilita la escritura de código de una manera más cómoda.
 
 `npm start` para ejecutar el servidor de desarrollo.
+
+# JSX: componentes vs. elementos (y props vs. atributos)
+JSX
+Esta curiosa sintaxis de etiquetas no es ni un string ni HTML.
+.
+Se llama JSX, y es una extensión de la sintaxis de JavaScript. Recomendamos usarlo con React para describir cómo debería ser la interfaz de usuario. JSX puede recordarte a un lenguaje de plantillas, pero viene con todo el poder de JavaScript. JSX produce “elementos” de React.
+.
+¿Por qué usar JSX?
+React acepta el hecho de que la lógica de renderizado está intrínsecamente unida a la lógica de la interfaz de usuario: cómo se manejan los eventos, cómo cambia el estado con el tiempo y cómo se preparan los datos para su visualización.
+.
+En lugar de separar artificialmente tecnologías poniendo el maquetado y la lógica en archivos separados, React separa intereses con unidades ligeramente acopladas llamadas “componentes” que contienen ambas.
+
+Usando las propiedades podemos reutilizar un mismo componente muchas veces ahorrándonos trabajo.
+
+Todas las propiedades las podemos mandar de dos formas, como lo vimos en la clase
+
+<App saludo=“Buenas” /> o usando “children” <App>Buenaaaaaas</App>(donde podemos poner también etiquetas de HTML) y usandolo con props.children
+
+# Componentes de TODO Machine
+React.Fragment nos permite enviar una etiqueta por componente, dentro de esta podemos mandar la cantidad que queramos, nos evita usar divs innecesariamente sin afectar la UI de la app.
+
+Una manera más común de utilizar un fragment en react es con las llaves vacías <></>
+
+Para evitar usar nombres que no son al momento de exportar usamos export {nombreFuncion};
+
+key ⇒ para que react pueda identificar cual componente es cuál dentro de una lista y así evitar render innecesarios cuando un elemento no debe cambiar.
+
+# CSS en React
+En este curso veremos dos formas de agregar estilos a nuestro proyecto.
+
+Primero hay que recordar que cuando estilabamos en html podiamos hacerlo en el mismo archivo por ejemplo
+```html
+    <h2 style="color: red; background-color: yellow;">Has completado 2 de 3 TODOs</h2>
+```
+pero para usarlo en js, en especial con react hay que pasarlo como un objeto, y hay que seguir una nomenclatura diferente.
+los valores se los envia en string y las propiedades que teniamos con `-` vamos a tener que escribir todo junto y a cada palabra nueva lo vamos a iniciar con la primera letra en mayuscula.
+
+```js
+const estilos = {
+  color: 'red',
+  backgroundColor: 'yellow', 
+};
+
+function TodoCounter() {
+  return (
+    <h2 style={estilos}>Has completado 2 de 3 TODOs</h2>
+  )
+}
+```
+
+La otra forma de estilar nuestros componentes es usando CSS-in-js
+`create-react-app` ya nos da esta caracteristica, basta con importar el archivo css
+```js
+import './src/App.css'
+```
