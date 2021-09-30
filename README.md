@@ -1,47 +1,70 @@
-<div align="center">
-    <h1>Curso de introducción a React.js</h1>
-</div>
+# Getting Started with Create React App
 
-# ¿Cuándo usar React.js?
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Hay dos flujos de trabajo para crear aplicaciones web
+## Available Scripts
 
-## Modelo en cascada:
+In the project directory, you can run:
 
-Cuando cada equipo tiene un tiempo para hacer todo su respectivo trabajo para construir una app. Por ejemplo: el equipo de diseño diseña la aplicación, el de desarrollo programa todo lo diseñado y finalmente se lanza la app recogiendo el feedback de los usuarios y se vuelve a empezar tomando en cuenta lo dicho por los usuarios. Es problemático porque el esfuerzo puede ser en vano porque no se tiene un feedback hasta que se termina de construir la app.
+### `npm start`
 
-## Modelo del ciclo imperativo:
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Se refiere a que cada equipo se enfocará en ciclos pequeños para construir partes más pequeñas de una app que en conjunto se puedan ir ensamblando para hacer la app completa. Resuelve el problema del modelo anterior, aquí se recibe el feedback al terminar cada pequeño ciclo, recibiendo así el feedback de manera más inmediata que antes.
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-## MVP’s o :
+### `npm test`
 
-Se refiere a construir funcionalidades pequeñas que sean completas para que podamos lanzarla y medir su impacto y decidir si seguir ese camino o probar otra cosa.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Hay que escoger el problema más crucial que debe resolver la app.
+### `npm run build`
 
-## Análisis: Componentes y comportamientos
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-**Componentes**: Son la forma de estructurar las piezas de nuestra página web para hacerlas escalables, nos ahorran tiempo y esfuerzo. Son abstracciones de los elementos de nuestra página web para ser reusados las veces que necesitemos. Trabajan de manera independiente a los demás. Con react todos los componentes tienen una conexión con el resto de componentes de la app para que en conjunto reaccionen a los comportamientos del usuario.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-**Comportamiento**: Las interacciones de los usuarios.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-React es muy bueno cuando queremos construir rápidamente la primera versión funcional de una app web sin sacrificar su escalabilidad. Si no queremos escalarla después, no usar react, podemos usar JS simple.
-# Instalación con Create React App
-Se pueden importar los scripts del código fuente de react directamente en el html o creando un entorno de desarrollo completo con empaquetadores y otras herramientas.
+### `npm run eject`
 
-Hay varias versiones que podemos usar como lo son la de desarrollo o la de producción que están más optimizadas.
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-Para hacer el ambiente de desarrollo usamos create react app, el cual podemos personalizar manualmente. En el dado caso de que queramos usar una configuración predeterminada usamos
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-`npx create-react-app` (npx instala temporalmente nuestras herramientas para ejecutarlas y luego borrarlas, eso permite tener siempre la última versión actualizada de la herramienta que queramos ejecutar). Además de esto, actualiza automáticamente los cambios hechos en el código
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-**react-scripts** es la configuración que hizo create-react-app por nosotros. Es un paquete que acelera el proceso de trabajo con react, pero no está tan optimizado a diferencia de hacerlo manualmente.
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-`div id=“root”` es donde se va a renderizar el código escrito en JS con react.
+## Learn More
 
-`ReactDOM.render` es donde enviaremos los componentes que queremos renderizar
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-**Babel** es el que hace la traducción que nos facilita la escritura de código de una manera más cómoda.
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-`npm start` para ejecutar el servidor de desarrollo.
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
