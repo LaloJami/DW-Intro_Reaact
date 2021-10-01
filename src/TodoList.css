@@ -1,0 +1,12 @@
+.TodoList{
+  background-color: rgba(243, 243, 243, 0.5);
+  padding: 25px 15px;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+ul {
+  margin: 0;
+  padding: 0 0 56px 0;
+  list-style: none;
+}
